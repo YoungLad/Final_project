@@ -16,13 +16,26 @@ $color: rgb(157, 141, 167);
 #explore-btn{
   position: relative;
   top: 200px;
-  left: 100px;
+  left: 200px;
   color: rgb(50, 71, 87);
   background-color: transparentize($color, 0.1);
   width: 200px;
+  font-size: 500%;
 }
+
+
 
 #title-text{
   position: relative;
   top: 150px;
+  left: 50px;
+  font-family: 'Volkhov', serif;
+  font-size: 500%;
+  color: #2A2254;
+
+}
+
+.navbar{
+  height: 50px;
+  // background-color: #5497E6 !important;
 }

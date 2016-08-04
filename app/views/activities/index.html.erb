@@ -1,7 +1,5 @@
-
-<body>  
-<div class="row-fluid">
-    <%= nav_bar fixed: :top, brand: "Local Spice", brand_link: activities_path, responsive: true do %>
+<div class="row-fluid" id="navvy">
+    <%= nav_bar fixed: :top, brand: "Local Spice", brand_link: activities_path, responsive: true, id: "top-bar" do %>
     <%= menu_group pull: :right do %>
 <% if user_signed_in? %>
     <%= menu_item "Logout", destroy_user_session_path, method: :delete%>
@@ -21,8 +19,8 @@
       
     </div>
 
-    <div class="col-sm-4">
-      <h1 id="title-text">Lorem Ipsum</h1>
+    <div class="col-sm-4" id="get-ready">
+      <h1 id="title-text">Get Ready too </h1>
 
         <button class="center btn" id="explore-btn">
         <h3><a href="/activities/show">Explore</a></h3> 
@@ -41,8 +39,5 @@
     </div>
 
     <div class="row-fluid">
-      
+      <div id="bottom-panel"></div>
     </div>
-
-</body>
-
